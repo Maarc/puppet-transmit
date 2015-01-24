@@ -3,9 +3,10 @@
 # Usage:
 #
 #     include transmit
-class transmit {
+class transmit ($version='4.4.8') {
+
   package { 'Transmit':
-    source   => 'http://www.panic.com/transmit/d/Transmit%204.4.5.zip',
+    source   => 'http://www.panic.com/transmit/d/Transmit%20${version}.zip',
     provider => 'compressed_app'
   }
 }
